@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenBacks Trading SDN BHD - International Trade Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00BF63",
+              secondary: "#00A656",
+              accent: "#00D470",
+              dark: "#1a1a1a",
+              darker: "#0d0d0d",
+              light: "#e6f7f0",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "slide-up": "slideUp 0.5s ease-out",
+              "fade-in": "fadeIn 0.8s ease-out",
+              "bounce-slow": "bounce 3s infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #00bf63, #00d470);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glass-effect {
+        background: rgba(0, 191, 99, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 191, 99, 0.2);
+      }
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .hero-overlay {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 191, 99, 0.9),
+          rgba(26, 26, 26, 0.8)
+        );
+      }
+      .random-img-1 {
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+      }
+      .random-img-2 {
+        clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 0% 100%);
+      }
+      .random-img-3 {
+        clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%);
+      }
+      .random-img-4 {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+      .random-img-5 {
+        clip-path: circle(70% at 50% 50%);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 overflow-x-hidden">
+    <!-- Header -->
+    <header
+      class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav class="container mx-auto px-4 lg:px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-3">
+            <div class="relative">
+              <div
+                class="bg-gradient-to-br from-primary to-accent p-3 rounded-xl shadow-lg"
+              >
+                <div class="relative">
+                  <i class="fas fa-globe-americas text-white text-2xl"></i>
+                  <div
+                    class="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-pulse"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span class="text-2xl lg:text-3xl font-bold gradient-text"
+                >GreenBacks</span
+              >
+              <div class="text-sm text-gray-600 font-medium">
+                Trading SDN BHD
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-primary transition-colors font-medium relative group"
+            >
+              Home
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-primary transition-colors font-medium relative group"
+            >
+              About
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-primary transition-colors font-medium relative group"
+            >
+              Services
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#gallery"
+              class="text-gray-700 hover:text-primary transition-colors font-medium relative group"
+            >
+              Gallery
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-primary transition-colors font-medium relative group"
+            >
+              Contact
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <button
+              class="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              Get Quote
+            </button>
+          </div>
+
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden text-gray-700 focus:outline-none"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="#gallery"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <button
+              class="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold w-full"
+            >
+              Get Quote
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background with parallax effect -->
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <!-- Floating elements -->
+      <div class="absolute top-20 left-10 animate-float">
+        <div class="w-20 h-20 bg-primary/20 rounded-full blur-xl"></div>
+      </div>
+      <div
+        class="absolute bottom-32 right-16 animate-float"
+        style="animation-delay: -2s"
+      >
+        <div class="w-32 h-32 bg-primary/30 rounded-full blur-xl"></div>
+      </div>
+      <div
+        class="absolute top-1/2 left-1/4 animate-float"
+        style="animation-delay: -4s"
+      >
+        <div class="w-16 h-16 bg-primary/25 rounded-full blur-xl"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div
+        id="hero-content"
+        class="container mx-auto px-4 lg:px-6 relative z-10 pt-24 pb-16"
+      >
+        <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          <div class="text-white animate-slide-up">
+            <div
+              class="inline-flex items-center bg-primary/20 rounded-full px-4 py-2 mb-6 glass-effect border-primary/30"
+            >
+              <i class="fas fa-star text-primary mr-2"></i>
+              <span class="text-sm font-medium text-white"
+                >Trusted Global Trade Partner</span
+              >
+            </div>
+
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
+              Connecting Markets
+              <span class="text-primary">Worldwide</span>
+            </h1>
+
+            <p class="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
+              Expert merchanting trade services bridging suppliers and customers
+              across international borders with seamless efficiency.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+              <button
+                class="bg-primary text-dark px-8 py-4 rounded-full font-bold hover:bg-secondary transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary/30"
+              >
+                <i class="fas fa-rocket mr-2"></i>Get Started Today
+              </button>
+              <button
+                class="border-2 border-primary text-primary bg-white/10 backdrop-blur-sm px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-dark transition-all duration-300 transform hover:scale-105"
+              >
+                <i class="fas fa-play mr-2"></i>Watch Demo
+              </button>
+            </div>
+
+            <!-- <i class="fas fa-shield-alt text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Secure Trade</div> -->
+            <!-- <i class="fas fa-shipping-fast text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Fast Delivery</div> -->
+            <!-- <i class="fas fa-handshake text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Trusted Partners</div> -->
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-6">
+              <div
+                class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-primary/30"
+              >
+                <i class="fas fa-shield-alt text-primary text-2xl mb-2"></i>
+                <div class="text-white font-semibold text-sm">Secure Trade</div>
+              </div>
+              <div
+                class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-primary/30"
+              >
+                <i class="fas fa-shipping-fast text-primary text-2xl mb-2"></i>
+                <div class="text-white font-semibold text-sm">
+                  Fast Delivery
+                </div>
+              </div>
+              <div
+                class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-primary/30"
+              >
+                <i class="fas fa-handshake text-primary text-2xl mb-2"></i>
+                <div class="text-white font-semibold text-sm">
+                  Trusted Partners
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image/Animation -->
+          <div
+            class="hidden lg:block animate-fade-in"
+            style="animation-delay: 0.3s"
+          >
+            <div class="relative">
+              <!-- Main container image placeholder with random style -->
+              <div
+                class="relative bg-primary/10 backdrop-blur-sm rounded-3xl p-8 border border-primary/30 glass-effect random-img-1"
+              >
+                <div
+                  class="aspect-square bg-gradient-to-br from-primary/20 to-dark/20 rounded-2xl p-6 mb-6 random-img-2"
+                >
+                  <div
+                    class="w-full h-full bg-primary/10 rounded-xl flex items-center justify-center random-img-3"
+                  >
+                    <i class="fas fa-ship text-6xl text-primary/80"></i>
+                  </div>
+                </div>
+
+                <!-- Feature cards -->
+                <!-- <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-primary/20 rounded-xl p-4 text-center backdrop-blur-sm border border-primary/30 random-img-4">
+                                    <i class="fas fa-globe text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Global Reach</div>
+                                </div>
+                                <div class="bg-primary/20 rounded-xl p-4 text-center backdrop-blur-sm border border-primary/30 random-img-5">
+                                    <i class="fas fa-handshake text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Trusted Partners</div>
+                                </div>
+                                <div class="bg-primary/20 rounded-xl p-4 text-center backdrop-blur-sm border border-primary/30">
+                                    <i class="fas fa-shipping-fast text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Fast Delivery</div>
+                                </div>
+                                <div class="bg-primary/20 rounded-xl p-4 text-center backdrop-blur-sm border border-primary/30">
+                                    <i class="fas fa-shield-alt text-primary text-2xl mb-2"></i>
+                                    <div class="text-white font-semibold text-sm">Secure Trade</div>
+                                </div>
+                            </div> -->
+              </div>
+
+              <!-- Floating elements around the main container -->
+              <div
+                class="absolute -top-4 -right-4 bg-primary rounded-full p-3 animate-float"
+              >
+                <i class="fas fa-star text-dark"></i>
+              </div>
+              <div
+                class="absolute -bottom-4 -left-4 bg-secondary rounded-full p-3 animate-float"
+                style="animation-delay: -1s"
+              >
+                <i class="fas fa-check text-dark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary animate-bounce-slow"
+      >
+        <i class="fas fa-chevron-down text-2xl"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-32 bg-white relative">
+      <div class="container mx-auto px-4 lg:px-6">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center bg-light rounded-full px-6 py-2 mb-6"
+          >
+            <i class="fas fa-building text-primary mr-2"></i>
+            <span class="text-primary font-semibold">About Our Company</span>
+          </div>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            Welcome to <span class="gradient-text">GreenBacks Trading</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"
+          ></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Company Image -->
+          <div class="relative">
+            <div
+              class="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl overflow-hidden shadow-2xl random-img-1"
+            >
+              <div
+                class="w-full h-full bg-gradient-to-br from-primary/10 to-dark/10 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <i class="fas fa-building text-6xl text-primary/50 mb-4"></i>
+                  <div class="text-xl font-semibold text-gray-600">
+                    Company Headquarters
+                  </div>
+                  <div class="text-gray-500">Malaysia</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating stats cards -->
+            <div
+              class="absolute -top-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-primary/20 random-img-4"
+            >
+              <div class="text-center">
+                <div class="text-2xl font-bold text-primary">15+</div>
+                <div class="text-sm text-gray-600">Years Experience</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-primary/20 random-img-5"
+            >
+              <div class="text-center">
+                <div class="text-2xl font-bold text-primary">500+</div>
+                <div class="text-sm text-gray-600">Happy Clients</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="space-y-8">
+            <div
+              class="bg-gradient-to-br from-gray-50 to-light/30 rounded-3xl p-8 lg:p-10"
+            >
+              <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">
+                About GreenBacks Trading SDN BHD
+              </h3>
+
+              <div class="space-y-6 text-gray-600 leading-relaxed">
+                <p class="text-lg">
+                  <strong class="text-primary"
+                    >GreenBacks Trading SDN BHD</strong
+                  >
+                  is run by an experienced director who oversees the existing
+                  company model and acts as a mediator between customers and
+                  suppliers. The primary concentration is on
+                  <em>merchanting trade</em>, which involves sourcing things
+                  from one country and shipping them to destinations outside
+                  Malaysia.
+                </p>
+
+                <p class="text-lg">
+                  GreenBacks Trading serves as a crucial link in the supply
+                  chain, facilitating smooth transactions and building enduring
+                  relationships with clients and partners. Our Merchanting Trade
+                  knowledge allows us to easily source and distribute products
+                  across international borders.
+                </p>
+
+                <div class="bg-white rounded-2xl p-6 border-l-4 border-primary">
+                  <h4 class="font-bold text-gray-800 mb-3">Our Mission</h4>
+                  <p class="text-gray-600">
+                    To bridge global markets by providing exceptional
+                    merchanting trade services that connect suppliers and
+                    customers worldwide with reliability, efficiency, and trust.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature highlights -->
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="bg-primary/5 p-6 rounded-2xl text-center hover:bg-primary/10 transition-all duration-300 transform hover:scale-105"
+              >
+                <div
+                  class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-award"></i>
+                </div>
+                <h4 class="font-bold text-gray-800 mb-2">
+                  Certified Excellence
+                </h4>
+                <p class="text-gray-600 text-sm">
+                  Industry-leading standards and certifications
+                </p>
+              </div>
+
+              <div
+                class="bg-accent/5 p-6 rounded-2xl text-center hover:bg-accent/10 transition-all duration-300 transform hover:scale-105"
+              >
+                <div
+                  class="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h4 class="font-bold text-gray-800 mb-2">Quick Response</h4>
+                <p class="text-gray-600 text-sm">
+                  24/7 customer support and rapid solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="py-20 lg:py-32 bg-gray-50 relative overflow-hidden"
+    >
+      <!-- Background decoration -->
+      <div
+        class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent"
+      ></div>
+
+      <div class="container mx-auto px-4 lg:px-6 relative">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center bg-white rounded-full px-6 py-2 mb-6 shadow-md"
+          >
+            <i class="fas fa-cogs text-primary mr-2"></i>
+            <span class="text-primary font-semibold">Our Services</span>
+          </div>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            Comprehensive <span class="gradient-text">Trade Solutions</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            We provide end-to-end merchanting trade services designed to
+            streamline your international business operations and maximize your
+            global reach.
+          </p>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+          >
+            <div class="relative mb-6">
+              <div
+                class="bg-gradient-to-br from-primary to-secondary text-white w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-search text-2xl"></i>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Global Product Sourcing
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Expert sourcing of quality products from trusted suppliers
+              worldwide, ensuring competitive pricing and reliable delivery with
+              comprehensive market research.
+            </p>
+            <div
+              class="flex items-center text-primary font-semibold group-hover:text-secondary transition-colors"
+            >
+              <span>Learn More</span>
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+          >
+            <div class="relative mb-6">
+              <div
+                class="bg-gradient-to-br from-secondary to-accent text-white w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-shipping-fast text-2xl"></i>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              International Logistics
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Efficient logistics and shipping solutions to deliver your
+              products safely across international borders with real-time
+              tracking and insurance coverage.
+            </p>
+            <div
+              class="flex items-center text-primary font-semibold group-hover:text-secondary transition-colors"
+            >
+              <span>Learn More</span>
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+          >
+            <div class="relative mb-6">
+              <div
+                class="bg-gradient-to-br from-accent to-primary text-white w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-handshake text-2xl"></i>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Trade Mediation
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Acting as intermediary between buyers and suppliers to ensure
+              smooth transactions, conflict resolution, and mutual satisfaction
+              for all parties involved.
+            </p>
+            <div
+              class="flex items-center text-primary font-semibold group-hover:text-secondary transition-colors"
+            >
+              <span>Learn More</span>
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+          >
+            <div class="relative mb-6">
+              <div
+                class="bg-gradient-to-br from-primary to-secondary text-white w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-chart-line text-2xl"></i>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Market Intelligence
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              In-depth market research and analysis to identify opportunities,
+              assess risks, and optimize your trading strategies for maximum
+              profitability.
+            </p>
+            <div
+              class="flex items-center text-primary font-semibold group-hover:text-secondary transition-colors"
+            >
+              <span>Learn More</span>
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+          >
+            <div class="relative mb-6">
+              <div
+                class="bg-gradient-to-br from-secondary to-accent text-white w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-network-wired text-2xl"></i>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Supply Chain Optimization
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Streamlined supply chain solutions to optimize efficiency, reduce
+              costs, and improve delivery times in your international
+              operations.
+            </p>
+            <div
+              class="flex items-center text-primary font-semibold group-hover:text-secondary transition-colors"
+            >
+              <span>Learn More</span>
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+          >
+            <div class="relative mb-6">
+              <div
+                class="bg-gradient-to-br from-accent to-primary text-white w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-file-contract text-2xl"></i>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Documentation & Compliance
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Complete assistance with trade documentation, customs clearance,
+              regulatory compliance, and legal requirements for international
+              trade.
+            </p>
+            <div
+              class="flex items-center text-primary font-semibold group-hover:text-secondary transition-colors"
+            >
+              <span>Learn More</span>
+              <i
+                class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 lg:py-32 bg-white">
+      <div class="container mx-auto px-4 lg:px-6">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center bg-light rounded-full px-6 py-2 mb-6"
+          >
+            <i class="fas fa-images text-primary mr-2"></i>
+            <span class="text-primary font-semibold">Our Gallery</span>
+          </div>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            Global <span class="gradient-text">Trade Operations</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Explore our worldwide trade operations and successful partnerships
+            across different industries and markets.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Gallery Item 1 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-ship text-4xl mb-4"></i>
+                <h3 class="text-lg font-semibold">Container Shipping</h3>
+                <p class="text-sm opacity-90">International cargo operations</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button
+                class="bg-white text-primary px-6 py-3 rounded-full font-semibold transform scale-90 group-hover:scale-100 transition-transform"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-warehouse text-4xl mb-4"></i>
+                <h3 class="text-lg font-semibold">Warehouse Operations</h3>
+                <p class="text-sm opacity-90">Storage and distribution</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button
+                class="bg-white text-primary px-6 py-3 rounded-full font-semibold transform scale-90 group-hover:scale-100 transition-transform"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-handshake text-4xl mb-4"></i>
+                <h3 class="text-lg font-semibold">Business Meetings</h3>
+                <p class="text-sm opacity-90">Client partnerships</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button
+                class="bg-white text-primary px-6 py-3 rounded-full font-semibold transform scale-90 group-hover:scale-100 transition-transform"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-globe text-4xl mb-4"></i>
+                <h3 class="text-lg font-semibold">Global Network</h3>
+                <p class="text-sm opacity-90">Worldwide connections</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button
+                class="bg-white text-primary px-6 py-3 rounded-full font-semibold transform scale-90 group-hover:scale-100 transition-transform"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-accent/20 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-truck text-4xl mb-4"></i>
+                <h3 class="text-lg font-semibold">Logistics Hub</h3>
+                <p class="text-sm opacity-90">Distribution center</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button
+                class="bg-white text-primary px-6 py-3 rounded-full font-semibold transform scale-90 group-hover:scale-100 transition-transform"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-chart-bar text-4xl mb-4"></i>
+                <h3 class="text-lg font-semibold">Market Analysis</h3>
+                <p class="text-sm opacity-90">Data and insights</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button
+                class="bg-white text-primary px-6 py-3 rounded-full font-semibold transform scale-90 group-hover:scale-100 transition-transform"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 lg:py-32 bg-dark relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 bg-gradient-to-br from-dark to-darker"></div>
+      <div class="absolute top-0 left-0 w-full h-full opacity-5">
+        <div
+          class="absolute top-20 left-20 w-64 h-64 bg-primary rounded-full blur-3xl animate-float"
+        ></div>
+        <div
+          class="absolute bottom-20 right-20 w-48 h-48 bg-primary rounded-full blur-3xl animate-float"
+          style="animation-delay: -3s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 lg:px-6 relative z-10">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center bg-primary/20 rounded-full px-6 py-2 mb-6 border border-primary/30"
+          >
+            <i class="fas fa-quote-left text-primary mr-2"></i>
+            <span class="text-primary font-semibold">Client Testimonials</span>
+          </div>
+          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+            What Our <span class="gradient-text">Clients Say</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Hear from businesses worldwide who trust GreenBacks Trading for
+            their international trade operations.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="group bg-white/5 backdrop-blur-lg border border-primary/20 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4 random-img-4"
+              >
+                <span class="text-dark font-bold text-xl">AS</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-lg">Ahmad Salleh</h4>
+                <p class="text-gray-400 text-sm">
+                  CEO, Tech Solutions Malaysia
+                </p>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex text-primary mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-300 leading-relaxed">
+                "GreenBacks Trading transformed our international sourcing.
+                Their expertise in Asian markets helped us reduce costs by 30%
+                while improving quality. Exceptional service!"
+              </p>
+            </div>
+            <div class="text-primary text-4xl opacity-20">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="group bg-white/5 backdrop-blur-lg border border-primary/20 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mr-4 random-img-5"
+              >
+                <span class="text-dark font-bold text-xl">LT</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-lg">Lisa Thompson</h4>
+                <p class="text-gray-400 text-sm">
+                  Import Manager, Global Retail Inc.
+                </p>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex text-primary mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-300 leading-relaxed">
+                "Professional, reliable, and always delivers on time. GreenBacks
+                has been our trusted partner for over 5 years. Their network is
+                unmatched."
+              </p>
+            </div>
+            <div class="text-primary text-4xl opacity-20">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="group bg-white/5 backdrop-blur-lg border border-primary/20 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mr-4 random-img-1"
+              >
+                <span class="text-dark font-bold text-xl">MR</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-lg">Mohammed Rahman</h4>
+                <p class="text-gray-400 text-sm">
+                  Director, Emirates Trading Co.
+                </p>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex text-primary mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-300 leading-relaxed">
+                "Outstanding market knowledge and seamless execution. They
+                handle complex logistics effortlessly. Our business has grown
+                200% with their support."
+              </p>
+            </div>
+            <div class="text-primary text-4xl opacity-20">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div
+            class="group bg-white/5 backdrop-blur-lg border border-primary/20 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mr-4 random-img-2"
+              >
+                <span class="text-dark font-bold text-xl">SK</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-lg">Sarah Kim</h4>
+                <p class="text-gray-400 text-sm">
+                  Procurement Head, Seoul Electronics
+                </p>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex text-primary mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-300 leading-relaxed">
+                "The team's attention to detail and commitment to quality is
+                remarkable. They've streamlined our entire supply chain
+                operations across 15 countries."
+              </p>
+            </div>
+            <div class="text-primary text-4xl opacity-20">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div
+            class="group bg-white/5 backdrop-blur-lg border border-primary/20 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center mr-4 random-img-3"
+              >
+                <span class="text-dark font-bold text-xl">JP</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-lg">James Peterson</h4>
+                <p class="text-gray-400 text-sm">
+                  VP Operations, Nordic Industries
+                </p>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex text-primary mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-300 leading-relaxed">
+                "Incredible market insights and flawless execution. GreenBacks
+                doesn't just deliver products – they deliver solutions. Highly
+                recommended!"
+              </p>
+            </div>
+            <div class="text-primary text-4xl opacity-20">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div
+            class="group bg-white/5 backdrop-blur-lg border border-primary/20 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-dark font-bold text-xl">RP</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-lg">Raj Patel</h4>
+                <p class="text-gray-400 text-sm">
+                  Managing Director, Mumbai Traders
+                </p>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex text-primary mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-300 leading-relaxed">
+                "Their expertise in regulatory compliance saved us months of
+                delays. Professional, knowledgeable, and always one step ahead.
+                True business partners."
+              </p>
+            </div>
+            <div class="text-primary text-4xl opacity-20">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust indicators -->
+        <div class="mt-16 text-center">
+          <div class="grid md:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-2">500+</div>
+              <div class="text-gray-400">Satisfied Clients</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-2">98%</div>
+              <div class="text-gray-400">Client Retention</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-2">4.9/5</div>
+              <div class="text-gray-400">Average Rating</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-2">50+</div>
+              <div class="text-gray-400">Countries Served</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Map -->
+    <section
+      id="contact"
+      class="py-20 lg:py-32 bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden"
+    >
+      <!-- Background decoration -->
+      <div class="absolute inset-0 bg-dark/40"></div>
+      <div class="absolute top-0 left-0 w-full h-full">
+        <div
+          class="absolute top-20 left-20 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-float"
+        ></div>
+        <div
+          class="absolute bottom-20 right-20 w-24 h-24 bg-primary/20 rounded-full blur-xl animate-float"
+          style="animation-delay: -2s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 lg:px-6 relative z-10">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center bg-primary/20 rounded-full px-6 py-2 mb-6 glass-effect border border-primary/30"
+          >
+            <i class="fas fa-phone text-primary mr-2"></i>
+            <span class="text-primary font-semibold">Get In Touch</span>
+          </div>
+          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Start Your Global <span class="text-primary">Trade Journey</span>
+          </h2>
+          <p class="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            Ready to expand your business internationally? Our expert team is
+            here to guide you through every step of your trade operations.
+          </p>
+        </div>
+
+        <!-- Contact Form & Map Row -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-16">
+          <!-- Contact Form -->
+          <div
+            class="bg-white/95 backdrop-blur-md rounded-3xl p-8 lg:p-10 shadow-2xl"
+          >
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Send Us a Message
+            </h3>
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Full Name *</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Email Address *</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    placeholder="+60 123 456 789"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Service Interest</label
+                  >
+                  <select
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  >
+                    <option>Product Sourcing</option>
+                    <option>International Logistics</option>
+                    <option>Trade Mediation</option>
+                    <option>Market Analysis</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >Message *</label
+                >
+                <textarea
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  placeholder="Tell us about your trade requirements..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl font-bold hover:from-secondary hover:to-accent transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Interactive Map -->
+          <div
+            class="bg-white/95 backdrop-blur-md rounded-3xl p-8 lg:p-10 shadow-2xl"
+          >
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Location</h3>
+            <div
+              class="h-[500px] bg-gray-200 rounded-2xl overflow-hidden relative"
+            >
+              <!-- Real Google Maps Embed -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127419.38412156283!2d101.67358699726562!3d3.1516964000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2s!4v1625097600000!5m2!1sen!2s"
+                class="w-full h-full rounded-2xl border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+            <div class="mt-4 text-center">
+              <button
+                class="bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors font-semibold"
+              >
+                <i class="fas fa-directions mr-2"></i>Get Directions
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="text-white">
+          <div class="text-center mb-12">
+            <h3 class="text-2xl lg:text-3xl font-bold mb-6">
+              Let's Connect & Grow Together
+            </h3>
+            <p class="text-green-100 text-lg leading-relaxed max-w-3xl mx-auto">
+              With our extensive network and expertise in international trade,
+              we're ready to help you navigate global markets and achieve your
+              business goals.
+            </p>
+          </div>
+
+          <!-- Contact Details Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div class="group">
+                <div
+                    class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 hover:border-white/30 hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full min-h-[260px] justify-between"
+                >
+                    <div>
+                        <div class="relative mb-6">
+                            <div
+                                class="bg-gradient-to-br w-16 h-16 rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                            </div>
+                            <div
+                                class="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            ></div>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-white">Headquarters</h4>
+                        <p class="text-green-100 font-semibold mb-1">
+                            Kuala Lumpur, Malaysia
+                        </p>
+                        <p class="text-green-200 text-sm opacity-90">
+                            Strategic location for Asian markets
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div
+                    class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 hover:border-white/30 hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full min-h-[260px] justify-between"
+                >
+                    <div>
+                        <div class="relative mb-6">
+                            <div
+                                class="bg-gradient-to-br w-16 h-16 rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <i class="fas fa-phone text-white text-2xl"></i>
+                            </div>
+                            <div
+                                class="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            ></div>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-white">Phone</h4>
+                        <p class="text-green-100 font-semibold mb-1">+60 3-XXXX-XXXX</p>
+                        <p class="text-green-200 text-sm opacity-90">
+                            24/7 Support Available
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div
+                    class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 hover:border-white/30 hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full min-h-[260px] justify-between"
+                >
+                    <div>
+                        <div class="relative mb-6">
+                            <div
+                                class="bg-gradient-to-br w-16 h-16 rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <i class="fas fa-envelope text-white text-2xl"></i>
+                            </div>
+                            <div
+                                class="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            ></div>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-white">Email</h4>
+                        <p class="text-green-100 font-semibold mb-1">
+                            info@greenbackstrading.com
+                        </p>
+                        <p class="text-green-200 text-sm opacity-90">
+                            Quick response guaranteed
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div
+                    class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 hover:border-white/30 hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full min-h-[260px] justify-between"
+                >
+                    <div>
+                        <div class="relative mb-6">
+                            <div
+                                class="bg-gradient-to-br w-16 h-16 rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <i class="fas fa-clock text-white text-2xl"></i>
+                            </div>
+                            <div
+                                class="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            ></div>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-white">
+                            Business Hours
+                        </h4>
+                        <p class="text-green-100 font-semibold mb-1">
+                            Mon - Fri: 9:00 AM - 6:00 PM
+                        </p>
+                        <p class="text-green-200 text-sm opacity-90">
+                            Malaysia Time (UTC+8)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Social Media -->
+          <div class="text-center">
+            <div
+              class="inline-flex items-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-8 py-3 mb-8"
+            >
+              <i class="fas fa-share-alt text-white mr-3"></i>
+              <h4 class="font-bold text-xl text-white">Follow Our Journey</h4>
+            </div>
+
+            <div class="flex justify-center space-x-8">
+              <a href="#" class="group relative">
+                <div
+                  class="bg-gradient-to-br from-blue-600 to-blue-700 p-5 rounded-2xl hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl w-15 h-12  flex items-center justify-center"
+                >
+                  <i class="fab fa-linkedin-in text-white text-xl"></i>
+                </div>
+                <span
+                  class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-green-100 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >LinkedIn</span
+                >
+              </a>
+
+              <a href="#" class="group relative">
+                <div
+                  class="bg-gradient-to-br from-blue-500 to-blue-600 p-5 rounded-2xl hover:from-blue-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl w-15 h-12 flex items-center justify-center"
+                >
+                  <i class="fab fa-facebook-f text-white text-xl"></i>
+                </div>
+                <span
+                  class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-green-100 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >Facebook</span
+                >
+              </a>
+
+              <a href="#" class="group relative">
+                <div
+                  class="bg-gradient-to-br from-sky-400 to-sky-500 p-5 rounded-2xl hover:from-sky-300 hover:to-sky-400 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl w-15 h-12  flex items-center justify-center"
+                >
+                  <i class="fab fa-twitter text-white text-xl"></i>
+                </div>
+                <span
+                  class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-green-100 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >Twitter</span
+                >
+              </a>
+
+              <a href="#" class="group relative">
+                <div
+                  class="bg-gradient-to-br from-pink-500 to-purple-600 p-5 rounded-2xl hover:from-pink-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl w-15 h-12  flex items-center justify-center"
+                >
+                  <i class="fab fa-instagram text-white text-xl"></i>
+                </div>
+                <span
+                  class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-green-100 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >Instagram</span
+                >
+              </a>
+
+              <a href="#" class="group relative">
+                <div
+                  class="bg-gradient-to-br from-green-500 to-green-600 p-5 rounded-2xl hover:from-green-400 hover:to-green-500 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl w-15 h-12  flex items-center justify-center"
+                >
+                  <i class="fab fa-whatsapp text-white text-xl"></i>
+                </div>
+                <span
+                  class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-green-100 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >Instagram</span
+                >
+              </a>
+
+              <!-- <a href="#" class="group relative">
+                            <div class="bg-gradient-to-br from-green-500 to-green-600 p-5 rounded-2xl hover:from-green-400 hover:to-green-500 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl w-20 h-20 flex items-center justify-center"></div>
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </div>
+                            <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-green-100 opacity-0 group-hover:opacity-100 transition-opacity">WhatsApp</span>
+                        </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 relative overflow-hidden">
+      <!-- Background decoration -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+      ></div>
+      <div
+        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-accent"
+      ></div>
+
+      <div class="container mx-auto px-4 lg:px-6 relative z-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          <!-- Company Info -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="bg-gradient-to-br from-primary to-accent p-3 rounded-xl"
+              >
+                <div class="relative">
+                  <i class="fas fa-globe-americas text-white text-2xl"></i>
+                  <div
+                    class="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <span class="text-2xl font-bold gradient-text">GreenBacks</span>
+                <div class="text-sm text-gray-400 font-medium">
+                  Trading SDN BHD
+                </div>
+              </div>
+            </div>
+
+            <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+              Your trusted partner for international merchanting trade
+              solutions. Connecting global markets with expertise, reliability,
+              and innovation since our establishment.
+            </p>
+
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold"
+              >
+                <i class="fas fa-certificate mr-1"></i>Certified
+              </div>
+              <div
+                class="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold"
+              >
+                <i class="fas fa-shield-alt mr-1"></i>Trusted
+              </div>
+              <div
+                class="bg-yellow-600 px-3 py-1 rounded-full text-sm font-semibold"
+              >
+                <i class="fas fa-star mr-1"></i>Premium
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-accent transition-colors flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-accent transition-colors flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-accent transition-colors flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>Our
+                  Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-gray-400 hover:text-accent transition-colors flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-accent transition-colors flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-white">Our Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <span class="text-gray-400 flex items-center"
+                  ><i class="fas fa-search text-xs mr-2 text-primary"></i
+                  >Product Sourcing</span
+                >
+              </li>
+              <li>
+                <span class="text-gray-400 flex items-center"
+                  ><i class="fas fa-shipping-fast text-xs mr-2 text-primary"></i
+                  >International Shipping</span
+                >
+              </li>
+              <li>
+                <span class="text-gray-400 flex items-center"
+                  ><i class="fas fa-handshake text-xs mr-2 text-primary"></i
+                  >Trade Mediation</span
+                >
+              </li>
+              <li>
+                <span class="text-gray-400 flex items-center"
+                  ><i class="fas fa-chart-line text-xs mr-2 text-primary"></i
+                  >Market Analysis</span
+                >
+              </li>
+              <li>
+                <span class="text-gray-400 flex items-center"
+                  ><i class="fas fa-cogs text-xs mr-2 text-primary"></i>Supply
+                  Chain</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0"
+          >
+            <p class="text-gray-400 text-center lg:text-left">
+              &copy; 2025 GreenBacks Trading SDN BHD. All rights reserved. |
+              <span class="text-primary">Reg. No: 123456-A</span>
+            </p>
+
+            <div class="flex items-center space-x-6">
+              <span class="text-gray-400 text-sm">Follow us:</span>
+              <div class="flex space-x-3">
+                <a
+                  href="#"
+                  class="bg-gray-800 p-2 rounded-lg hover:bg-primary transition-all duration-300 transform hover:scale-110"
+                >
+                  <i class="fab fa-linkedin-in text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-gray-800 p-2 rounded-lg hover:bg-primary transition-all duration-300 transform hover:scale-110"
+                >
+                  <i class="fab fa-facebook-f text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-gray-800 p-2 rounded-lg hover:bg-primary transition-all duration-300 transform hover:scale-110"
+                >
+                  <i class="fab fa-twitter text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-gray-800 p-2 rounded-lg hover:bg-primary transition-all duration-300 transform hover:scale-110"
+                >
+                  <i class="fab fa-instagram text-sm"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to top button -->
+      <button
+        id="back-to-top"
+        class="fixed bottom-8 right-8 bg-gradient-to-r from-primary to-accent text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 invisible"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+            // Close mobile menu if open
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      });
+
+      // Header background change on scroll
+      const header = document.querySelector("header");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+          header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg");
+        } else {
+          header.classList.remove(
+            "bg-white/95",
+            "backdrop-blur-md",
+            "shadow-lg"
+          );
+        }
+      });
+
+      // Back to top button
+      const backToTopBtn = document.getElementById("back-to-top");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 500) {
+          backToTopBtn.classList.remove("opacity-0", "invisible");
+          backToTopBtn.classList.add("opacity-100", "visible");
+        } else {
+          backToTopBtn.classList.add("opacity-0", "invisible");
+          backToTopBtn.classList.remove("opacity-100", "visible");
+        }
+      });
+
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-slide-up");
+          }
+        });
+      }, observerOptions);
+
+      // Observe sections for animations
+      document.querySelectorAll("section").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Gallery lightbox functionality (basic)
+      document.querySelectorAll(".group").forEach((item) => {
+        item.addEventListener("click", function () {
+          // This could be expanded to show a proper lightbox/modal
+          console.log("Gallery item clicked");
+        });
+      });
+
+      // Form submission handler
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert("Thank you for your message! We will get back to you soon.");
+      });
+
+      // Add loading animation to buttons
+      document.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", function () {
+          if (this.type === "submit") {
+            const originalText = this.innerHTML;
+            this.innerHTML =
+              '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            setTimeout(() => {
+              this.innerHTML = originalText;
+            }, 2000);
+          }
+        });
+      });
+
+      // Add parallax effect to hero section
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelector("#home");
+        const speed = scrolled * 0.5;
+
+        if (parallax) {
+          parallax.style.transform = `translateY(${speed}px)`;
+        }
+      });
+    </script>
+  </body>
+</html>
